@@ -1,0 +1,34 @@
+Output(4,1,"Bienvenue dans le")
+Output(5,1,"programme de calcul de")
+Output(6,1,"coordonnées graphiques.")
+Output(7,1,"Fait par Pr0toc0l. M et Z.")
+Output(8,1,"Pour commencer, Appuyez")
+Output(9,1,"sur 1.")
+getKey→N
+Repeat N=92
+getKey→N
+End
+If N=92
+EffÉcran
+Menu(" CALCULS ","MILIEU",A,"COORDONNÉES",B,"QUITTER : Seconde + Mode",99
+Lbl A
+Input "XA =",A
+Input "YA =",B
+Input "XB =",C
+Input "YB =",D
+(A+C)/2→E
+(B+D)/2→F
+Disp "L'abscisse XI=",E
+Disp "L'ordonnée YI=",F
+Goto A
+Lbl B
+Input "XA =",A
+Input "YA =",B
+Input "XB =",C
+Input "YB =",D
+(C-A)^2+(D-B)^2→E
+√(E)→F
+Disp "La valeur de AB²=",E
+Disp "La valeur de AB=",F
+Goto B
+Lbl 99
