@@ -1,1 +1,71 @@
-Test
+Output(4,1,"Bienvenue dans le")
+Output(5,1,"programme de calcul des")
+Output(6,1,"aires de plusieurs formes.")
+Output(7,1,"Fait par Pr0toc0l. Z.")
+Output(8,1,"Pour commencer, Appuyez")
+Output(9,1,"sur 1.")
+getKey→N
+Repeat N=92
+getKey→N
+End
+If N=92
+EffÉcran
+Menu(" FORMES ","CARRÉ",A,"RECTANGLE",B,"LOSANGE",F,"TRIANGLE RECTANGLE",C,"CERCLE (DISQUE)",D,"TRAPÈZE",E,"TRIANGLE",T,"QUITTER : Seconde + Mode",99
+Lbl A
+Output(10,1,"Formule : c²")
+Input "c = ? ",C
+C²
+C²→D
+Disp "L'aire du carré est de ",D
+Goto A
+Lbl B
+Output(10,1,"Formule : L*l")
+Input "Longueur = ",L
+Input "Largeur = ",Z
+L*Z
+(L*Z)→Q
+Disp "L'aire du rectangle est de ",Q
+Goto B
+Lbl C
+Output(10,1,"Formule : Base*h/2")
+Input "Hauteur = ",L
+Input "Largeur (base) = ",Z
+(L*Z)/2
+(L*Z)/2→Q
+Disp "L'aire du triangle"
+Disp "rectangle est de ",Q
+Goto C
+Lbl D
+Output(10,1,"Formule : r²*π")
+Input "Rayon (r) = ",R
+R^2*π
+(R^2*π)→P
+(R^2*3.141592)→G
+Disp "L'aire du disque est de ",P
+Disp "L'aire du disque est"
+Disp "d'environ ",G 
+Goto D
+Lbl E
+Output(10,1,"Formule : ((B+b)*h)/2
+Input "Grande Base (B) = ",B
+Input "Petite Base (b) = ",S
+Input "Hauteur (h) = ",J
+((B+S)*J)/2→A
+Disp "L'aire du trapèze est de ",A
+Goto E
+Lbl F
+Output(10,1,"Formule : (d1*d2)/2
+Input "Diagonale 1 (d1) = ",D
+Input "Diagonale 2 (d2) = ",K
+(D*K)/2→U
+Disp "L'aire du losange est de ",U
+Goto F
+Lbl T
+Output(10,1,"Formule : (B*h)/2")
+Input "Base (b) = ",P
+Input "Hauteur (h) = ",K
+(P*K)/2
+(P*K)/2→O
+Disp "L'aire du triangle est de ",O
+Goto T
+Lbl 99
