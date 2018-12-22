@@ -10,7 +10,7 @@ getKey→N
 End
 If N=92
 EffÉcran
-Menu(" CALCULS ","MILIEU",A,"COORDONNÉES",B,"QUITTER : Seconde + Mode",99
+Menu(" CALCULS ","MILIEU",A,"LONGUEURS",B,"FORMULES",F,"QUITTER : Seconde + Mode",99
 Lbl A
 Input "XA =",A
 Input "YA =",B
@@ -31,4 +31,13 @@ Input "YB =",D
 Disp "La valeur de AB²=",E
 Disp "La valeur de AB=",F
 Goto B
+Lbl F
+Output(2,1,"Formule de calcul ")
+Output(3,1,"d'un milieu : ")
+Output(4,1,"Abscisse : (xA+xB)/2")
+Output(5,1,"Ordonnée : (yA+yB)/2")
+Output(7,1,"Formule de calcul de ")
+Output(8,1,"longueurs : ")
+Output(9,1,"√(xB-xA)²+(yB-yA)²")
+Return
 Lbl 99
